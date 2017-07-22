@@ -4,7 +4,7 @@
    <img alt="Deploy to Salesforce" 
 		 src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
 </a>
-
+Fork from https://github.com/forcedotcom/CustomMetadataLoader , Fixing issue for delimiter ( NOT COMMA IT IS SEMICOLON )
 v 2.0
 The Custom Metadata loader tool now supports updates of existing custom metadata records. Load the csv file with updates to existing records, and use the tool the import and update the records.
 # How to use custom metadata loader to update existing records
@@ -30,7 +30,7 @@ Custom metadata loader has a sample custom metadata type CountryMapping__mdt tha
    These users also need the 'Customize Application' to create Custom Metadata records. Admin should have this permission by default. 
 2. To apply the permission set - CustomMetadataLoader to the user who is using the tool. Go to Administer->Manage Users ->Permission Sets. Click on Custom Metadata Loader. 
 3  You will be taken to Permission Set page - Click on Manage Assignments. Then click Add Assignments. Choose the user/users. Then click Assign. Then Done. Now the perm set should be successfully assigned.
-4. Create a CSV file with a header that contains the field API names, including the org namespace. Either Label or Developer Name is required. A sample csv for CountryMapping__mdt is in the same folder as this README file. 
+4. Create a file with a header that contains the field API names, including the org namespace. Either Label or Developer Name is required. A sample csv for CountryMapping__mdt is in the same folder as this README file. ( DELIMITER ";")
 5. Next you are ready to use the tool - Select Custom Metadata Loader from the app menu in your org, then go to the Custom Metadata Loader tab.The app will prompt you to create a remote site setting if it is missing. 
 6. Select the CSV file and the corresponding custom metadata type.
 7. Click 'Create/Update custom metadata' to bulk load the records from the CSV file into your org.
